@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 By Usman Murtala
 
 # The Story
