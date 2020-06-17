@@ -55,9 +55,9 @@
             class="image__filter--orange"
           ></v-img>
           <div class="text-center">
-            <v-sheet color="orange--text"
+            <v-sheet color="orange--text grey darken-3 text-h5"
               >"Usman, you are a software engineer and also a ninja, a
-              ninjaneer" - Fredreca</v-sheet
+              ninjaneer" - Fredreca King, CEO GG2</v-sheet
             >
           </div>
         </v-col>

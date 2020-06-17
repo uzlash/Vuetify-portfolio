@@ -12,7 +12,7 @@
               <v-expansion-panel-header class="text-h4 font-weight-light">{{
                 ability.title
               }}</v-expansion-panel-header>
-              <v-expansion-panel-content class="text-h6 font-weight-light">
+              <v-expansion-panel-content class="text-h5 font-weight-light">
                 {{ ability.content }}
               </v-expansion-panel-content>
             </v-expansion-panel>
