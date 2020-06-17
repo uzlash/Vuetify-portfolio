@@ -1,11 +1,6 @@
 <template>
   <nav>
-    <v-navigation-drawer
-      app
-      class="grey darken-4"
-      v-model="drawer"
-      width="350px"
-    >
+    <v-navigation-drawer app class="grey darken-4" width="350px">
       <v-layout column align-center>
         <v-flex class="mt-5">
           <p

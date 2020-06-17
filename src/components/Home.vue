@@ -3,6 +3,10 @@
     <div class="home--elements">
       <h2 class="text-h2 font-weight-thin">USMAN MURTALA</h2>
       <h1 class="text-h1 font-weight-thin orange--text">FRONT END DEVELOPER</h1>
+      <p class="text-h5 font-weight-thin">
+        "A user interface is like a joke, if you have to explain it, it's not
+        that good." -- Martin Leblanc
+      </p>
     </div>
   </section>
 </template>
@@ -32,8 +36,8 @@ export default {
 
 .home--elements {
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: 5em;
+  top: 35em;
   text-align: right;
 }
 </style>
