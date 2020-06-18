@@ -6,6 +6,7 @@
       <About />
       <Services />
       <Experience />
+      <Skills />
     </v-main>
   </v-app>
 </template>
@@ -16,6 +17,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 
 export default {
   name: "App",
@@ -25,7 +27,8 @@ export default {
     Home,
     About,
     Services,
-    Experience
+    Experience,
+    Skills
   },
 
   data: () => ({
