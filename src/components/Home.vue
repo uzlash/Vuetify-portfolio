@@ -4,11 +4,11 @@
       class="fill-height text-right pa-md-5 pa-3 mx-0 align-end justify-end"
     >
       <div class="home--elements">
-        <h2 class="text-h2 font-weight-thin">USMAN MURTALA</h2>
-        <h1 class="text-h1 font-weight-thin orange--text">
+        <h2 class="text-h3 font-weight-thin">USMAN MURTALA</h2>
+        <h1 class="text-h2 font-weight-thin orange--text">
           FRONT END DEVELOPER
         </h1>
-        <p class="text-h5 font-weight-thin">
+        <p class="text-h6 font-weight-thin">
           "A user interface is like a joke, if you have to explain it, it's not
           that good." -- Martin Leblanc
         </p>
@@ -39,11 +39,4 @@ export default {
   background: url("../assets/hero.png");
   background-size: cover;
 }
-
-/* .home--elements {
-  position: absolute;
-  right: 5em;
-  top: 35em;
-  text-align: right;
-  } */
 </style>

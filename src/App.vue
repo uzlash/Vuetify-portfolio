@@ -9,6 +9,8 @@
       <Experience />
       <Skills />
       <Portfolio />
+      <Clients />
+      <Contact />
     </v-main>
   </v-app>
 </template>
@@ -21,6 +23,8 @@ import Services from "./components/Services";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
+import Clients from "./components/Clients";
+import Contact from "./components/Contact";
 
 export default {
   name: "App",
@@ -32,7 +36,9 @@ export default {
     Services,
     Experience,
     Skills,
-    Portfolio
+    Portfolio,
+    Clients,
+    Contact
   },
 
   data: () => ({
@@ -40,3 +46,15 @@ export default {
   })
 };
 </script>
+
+<style>
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #bdbdbd;
+}
+::-webkit-scrollbar-thumb {
+  background: #616161;
+}
+</style>

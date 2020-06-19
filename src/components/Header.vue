@@ -1,18 +1,18 @@
 <template>
   <nav>
-    <v-navigation-drawer app class="grey darken-4" width="350px">
+    <v-navigation-drawer app class="grey darken-4" width="300px">
       <v-layout column align-center>
-        <v-flex class="mt-5">
+        <v-flex class="mt-4">
           <p
-            class="white--text mt-3 text-center text-h1 font-weight-bold orange--text"
+            class="white--text mt-3 text-center text-h2 font-weight-bold orange--text"
           >
             UM
           </p>
         </v-flex>
-        <v-flex class="my-3 text-h4 font-weight-thin">
+        <v-flex class="my-2 text-h4 font-weight-thin">
           Usman Murtala
         </v-flex>
-        <v-flex class="my-3 text-h5 font-weight-thin">
+        <v-flex class="my-2 text-h5 font-weight-thin">
           Front End Developer
         </v-flex>
       </v-layout>
@@ -30,7 +30,7 @@
         </v-list-item-group>
       </v-list>
       <v-row wrap>
-        <v-col class="mt-5 text-center" md4 v-for="(icon, i) in icons" :key="i">
+        <v-col class="text-center" md4 v-for="(icon, i) in icons" :key="i">
           <v-icon>{{ icon }}</v-icon>
         </v-col>
       </v-row>

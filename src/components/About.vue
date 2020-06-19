@@ -1,13 +1,10 @@
-/* eslint-disable prettier/prettier */
 <template>
   <section class="about" id="about">
-    <!-- <v-container grid-list-xs> </v-container> -->
     <v-container>
-      <h2 class="my-5 font-weight-bold orange--text text-h2">WHO AM I?</h2>
-      <v-row wrap class="text-h5 font-weight-thin">
+      <h2 class="my-5 font-weight-light orange--text text-h3">WHO AM I?</h2>
+      <v-row wrap class="text-h6 font-weight-thin">
         <v-col md4>
-          <!-- <div class="div--polygon">&nbsp;</div> -->
-          <p class="p--first font-weight-light">
+          <p class="font-weight-light">
             I am a front end developer with 2 years of experience who is adept
             at creating client side apps that are accessible, performant,
             responsive and scalable. My attention to detail, keen eye for good
@@ -15,9 +12,6 @@
             implement amazing UI (User Interface) which in turn leads to a
             superb UX (User Experience).
           </p>
-          <!-- what i can do for you is take your
-            ideas, designs and mockups and turn it into something real,
-            intuituve and dynamic be it an MVP or a production grade app. -->
         </v-col>
         <v-col md4 class="py-auto">
           <v-row>
@@ -41,7 +35,7 @@
       <v-row>
         <v-col md8>
           <h2
-            class="my-5 font-weight-light orange--text text-h2 text-uppercase"
+            class="my-5 font-weight-light orange--text text-h3 text-uppercase"
           >
             What i can create for you is a site that is:
           </h2>
@@ -49,13 +43,13 @@
         <v-col md4>
           <v-img
             src="../assets/1348005528.svg"
-            height="500px"
-            width="500px"
+            height="400px"
+            width="400px"
             contain
             class="image__filter--orange"
           ></v-img>
           <div class="text-center">
-            <v-sheet color="orange--text grey darken-4 text-h5"
+            <v-sheet color="orange--text grey darken-4 body-1"
               >"Usman, you are a software engineer and also a ninja, a
               ninjaneer" - Fredreca King, CEO GG2</v-sheet
             >

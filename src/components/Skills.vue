@@ -4,33 +4,29 @@
       <v-col col-12>
         <v-row justify="space-between">
           <v-col cols="auto">
-            <h2 class="my-5 font-weight-light orange--text text-h2">
+            <h2 class="my-5 font-weight-light orange--text text-h3">
               WHAT I KNOW?
             </h2>
           </v-col>
-          <v-col cols="4">
-            <!-- <p class="text-h6 font-weight-light">
-              I am currently a volunteer learning community mentor on Andela,
-              which shows i am active in my developer community.
-            </p>
-            <v-btn depressed class="orange">Download Resume</v-btn> -->
-          </v-col>
+          <!-- <v-col cols="4"> </v-col> -->
         </v-row>
       </v-col>
       <v-col col-12>
         <v-row justify="space-around">
           <v-col cols="6">
-            <h3 class="text-h4 my-5 orange--text">My Skills</h3>
-            <h4 class="text-h5 orange--text">Technical Skills</h4>
+            <h3 class="text-h5 my-5 orange--text">My Skills</h3>
+            <h4 class="text-h6 orange--text font-weight-light">
+              Technical Skills
+            </h4>
             <v-row v-for="skill in skillTech" :key="skill.title">
               <v-col cols="4" align-self="center"
-                ><span class="text-h6 font-weight-light ml-4">
+                ><span class="body-1 font-weight-light ml-4">
                   {{ skill.title }}
                 </span></v-col
               >
               <v-col cols="8">
                 <v-rating
-                  size="30"
+                  size="25"
                   v-model="skill.rating"
                   full-icon="mdi-record"
                   half-icon="mdi-record"
@@ -40,16 +36,16 @@
                 ></v-rating>
               </v-col>
             </v-row>
-            <h4 class="text-h5 orange--text">Soft Skills</h4>
+            <h4 class="text-h6 orange--text font-weight-light">Soft Skills</h4>
             <v-row v-for="(skill, index) in skillSoft" :key="index">
               <v-col cols="4" align-self="center"
-                ><span class="text-h6 font-weight-light ml-4">{{
+                ><span class="body-1 font-weight-light ml-4">{{
                   skill.title
                 }}</span></v-col
               >
               <v-col cols="8">
                 <v-rating
-                  size="30"
+                  size="25"
                   v-model="skill.rating"
                   full-icon="mdi-record"
                   empty-icon="mdi-record"
@@ -60,7 +56,7 @@
             </v-row>
           </v-col>
           <v-col cols="4">
-            <h3 class="text-h4 my-5 orange--text">My Education</h3>
+            <h3 class="text-h5 my-5 orange--text">My Education</h3>
             <v-row>
               <v-sheet color="transparent">
                 <v-row>
@@ -91,11 +87,11 @@
             </v-row>
             <v-row class="mt-5">
               <v-col class="mt-5">
-                <h3 class="text-h4 orange--text font-weight-light">
+                <h3 class="text-h5 orange--text font-weight-light">
                   Skills Detail
                 </h3>
                 <ul v-for="skill in skillDetail" :key="skill.content">
-                  <li class="text-h6 font-weight-light my-2">
+                  <li class="body-1 font-weight-light my-2">
                     <span class="orange--text">{{ skill.title }}: </span>
                     <span>{{ skill.content }}</span>
                   </li>

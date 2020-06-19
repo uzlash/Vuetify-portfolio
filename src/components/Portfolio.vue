@@ -1,16 +1,11 @@
 <template>
   <section class="portfolio" id="portfolio">
     <v-container>
-      <h2 class="my-5 font-weight-light orange--text text-h2">
+      <h2 class="my-5 font-weight-light orange--text text-h3">
         WHAT I'VE DONE
       </h2>
 
-      <v-carousel
-        cycle
-        height="700"
-        hide-delimiter-background
-        :show-arrows="false"
-      >
+      <v-carousel height="650" hide-delimiter-background show-arrows-on-hover>
         <v-carousel-item
           v-for="(project, index) in project_detail"
           :key="index"
@@ -18,21 +13,21 @@
           <v-sheet color="transparent" height="100%">
             <v-row justify="center" class="my-5">
               <div class="font-weight-light">
-                <h3 class="text-h5 orange--text">{{ project.project_name }}</h3>
-                <h4 class="text-h6">{{ project.project_skill }}</h4>
+                <h3 class="text-h6 orange--text">{{ project.project_name }}</h3>
+                <h4 class="body-1">{{ project.project_skill }}</h4>
               </div>
             </v-row>
             <v-row justify="center">
               <v-col cols="6" class="pa-5">
                 <v-row class="pa-5">
-                  <h3 class="mb-2 text-h5 orange--text">Project Details</h3>
-                  <p class="text-h6 font-weight-light">
+                  <h3 class="mb-2 text-h6 orange--text">Project Details</h3>
+                  <p class="body-1 font-weight-light">
                     {{ project.project_desc }}
                   </p>
                 </v-row>
                 <v-row class="px-5">
                   <v-col cols="12">
-                    <h3 class="text-h5 orange--text">Project info</h3>
+                    <h3 class="text-h6 orange--text">Project info</h3>
                   </v-col>
                   <v-col cols="12">
                     <v-list color="transparent">
@@ -40,11 +35,11 @@
                         <v-list-item-icon>
                           <v-icon color="orange" large>mdi-account</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title class="text-h5 font-weight-light">
+                        <v-list-item-title class="body-1 font-weight-light">
                           Client Name:
                         </v-list-item-title>
                         <v-list-item-subtitle
-                          class="mr-5 text-h6 font-weight-light"
+                          class="mr-5 body-1 font-weight-light"
                         >
                           {{ project.client_name }}
                         </v-list-item-subtitle>
@@ -57,11 +52,11 @@
                         <v-list-item-icon>
                           <v-icon color="orange" large>mdi-calendar</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title class="text-h5 font-weight-light">
+                        <v-list-item-title class="body-1 font-weight-light">
                           Project Date:
                         </v-list-item-title>
                         <v-list-item-subtitle
-                          class="mr-5 text-h6 font-weight-light"
+                          class="mr-5 body-1 font-weight-light"
                         >
                           {{ project.project_date }}
                         </v-list-item-subtitle>
@@ -74,7 +69,7 @@
                         <v-list-item-icon>
                           <v-icon color="orange" large>mdi-link</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title class="text-h5 font-weight-light">
+                        <v-list-item-title class="body-1 font-weight-light">
                           Live Preview
                         </v-list-item-title>
                         <v-list-item-subtitle class="mr-5">
@@ -96,7 +91,7 @@
                 <v-img
                   :src="project.project_image"
                   height="300"
-                  width="620"
+                  width="600"
                   class="mt-5"
                 ></v-img>
               </v-col>

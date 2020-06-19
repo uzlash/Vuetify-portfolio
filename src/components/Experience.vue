@@ -1,7 +1,7 @@
 <template>
   <section class="experience" id="experience">
     <v-container>
-      <h2 class="my-5 font-weight-light orange--text text-h2">
+      <h2 class="my-5 font-weight-light orange--text text-h3">
         WHERE I'VE BEEN
       </h2>
       <v-row>
@@ -17,10 +17,10 @@
             </template>
             <v-card class="elevation-2 white grey darken-4">
               <v-card-title
-                class="headline text-h5 font-weight-light orange--text"
+                class="headline text-h6 font-weight-light orange--text"
                 >{{ exp.title }}</v-card-title
               >
-              <v-card-text class="text-h6 white--text font-weight-light">
+              <v-card-text class="body-1 white--text font-weight-light">
                 {{ exp.content }}
               </v-card-text>
             </v-card>
