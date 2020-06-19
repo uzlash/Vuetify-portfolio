@@ -15,7 +15,7 @@
             <template v-slot:opposite>
               <span> {{ exp.year }} </span>
             </template>
-            <v-card class="elevation-2 white grey darken-2">
+            <v-card class="elevation-2 white grey darken-4">
               <v-card-title
                 class="headline text-h5 font-weight-light orange--text"
                 >{{ exp.title }}</v-card-title

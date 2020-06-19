@@ -36,7 +36,7 @@
                   half-icon="mdi-record"
                   empty-icon="mdi-record"
                   color="orange"
-                  background-color="grey darken-4"
+                  background-color="grey darken-3"
                 ></v-rating>
               </v-col>
             </v-row>
@@ -54,7 +54,7 @@
                   full-icon="mdi-record"
                   empty-icon="mdi-record"
                   color="orange"
-                  background-color="grey darken-4"
+                  background-color="grey darken-3"
                 ></v-rating>
               </v-col>
             </v-row>
@@ -91,9 +91,14 @@
             </v-row>
             <v-row class="mt-5">
               <v-col class="mt-5">
-                <h3>Skills Detail</h3>
+                <h3 class="text-h4 orange--text font-weight-light">
+                  Skills Detail
+                </h3>
                 <ul v-for="skill in skillDetail" :key="skill.content">
-                  <li>{{ skill.title }}: {{ skill.content }}</li>
+                  <li class="text-h6 font-weight-light my-2">
+                    <span class="orange--text">{{ skill.title }}: </span>
+                    <span>{{ skill.content }}</span>
+                  </li>
                 </ul>
               </v-col>
             </v-row>
@@ -110,10 +115,10 @@ export default {
     skillTech: [
       { title: "HTML5", rating: 4 },
       { title: "CSS3", rating: 4 },
-      { title: "JavaScript", rating: 3 },
+      { title: "JavaScript", rating: 4 },
+      { title: "CMS", rating: 4 },
       { title: "Vue.js", rating: 3 },
       { title: "React", rating: 3 },
-      { title: "CMS", rating: 3 },
       { title: "Firebase", rating: 3 },
       { title: "Node.js", rating: 2 }
     ],
@@ -123,7 +128,7 @@ export default {
       { title: "Adaptability", rating: 4 }
     ],
     skillDetail: [
-      { title: "CSS3", content: "SSCC, Bootstrap, Materialize, Tachyons, MDB" },
+      { title: "CSS3", content: "SCSS, Bootstrap, Materialize, Tachyons, MDB" },
       { title: "JavaScript", content: "ES5 and ES6" },
       {
         title: "Vue.js",

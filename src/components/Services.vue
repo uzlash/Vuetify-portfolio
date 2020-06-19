@@ -7,7 +7,7 @@
             <v-expansion-panel
               v-for="(ability, i) in abilities"
               :key="i"
-              class="grey darken-2"
+              class="grey darken-4"
             >
               <v-expansion-panel-header class="text-h4 font-weight-light">{{
                 ability.title
