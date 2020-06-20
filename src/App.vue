@@ -2,7 +2,7 @@
   <v-app>
     <Header />
     <!-- <v-main class="grey darken-3"> -->
-    <v-main>
+    <v-main class="pt-0">
       <Home />
       <About />
       <Services />

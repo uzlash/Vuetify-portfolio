@@ -1,5 +1,5 @@
 <template>
-  <section class="clients" id="clients">
+  <section class="contact" id="contact">
     <v-container>
       <h2 class="my-5 font-weight-light orange--text text-h3 text-center">
         LET'S TALK
@@ -41,7 +41,7 @@
                   label="Message"
                   prepend-icon="mdi-lead-pencil"
                   v-model="message"
-                  :rules="inputRules"
+                  :rules="messageRules"
                 ></v-textarea>
 
                 <v-btn block class="orange" @click="submit" :loading="loading"
@@ -52,25 +52,64 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-row>
+        <v-snackbar
+          v-model="snackbar"
+          :timeout="10000"
+          bottom
+          app
+          color="orange"
+          >Message Sent successfully.
+          <v-btn outlined color="white" @click="snackbar = false">Close</v-btn>
+        </v-snackbar>
+      </v-row>
     </v-container>
   </section>
 </template>
 
 <script>
+import db from "@/firebase/init";
 export default {
   data: () => ({
     loading: false,
+    snackbar: false,
     name: "",
     nameRules: [
       v => !!v || "Name is required",
-      v => (v && v.length <= 10) || "Name must be less than 10 characters"
+      v => (v && v.length <= 15) || "Name must be less than 15 characters"
     ],
     email: "",
     emailRules: [
       v => !!v || "E-mail is required",
       v => /.+@.+\..+/.test(v) || "E-mail must be valid"
     ],
-    message: ""
-  })
+    message: "",
+    messageRules: [
+      v => !!v || "Message is required",
+      v => (v && v.length >= 5) || "Message must be more than 5 characters"
+    ]
+  }),
+  methods: {
+    submit() {
+      if (this.$refs.form.validate()) {
+        this.loading = true;
+        const contact = {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        };
+        db.collection("contacts")
+          .add(contact)
+          .then(() => {
+            console.log("Added to db");
+            this.loading = false;
+            this.snackbar = true;
+          })
+          .catch(err => {
+            console.log(err);
+          });
+      }
+    }
+  }
 };
 </script>

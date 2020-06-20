@@ -40,7 +40,7 @@
             What i can create for you is a site that is:
           </h2>
         </v-col>
-        <v-col md4>
+        <v-col md4 class="hidden-sm-and-down">
           <v-img
             src="../assets/1348005528.svg"
             height="400px"

@@ -1,6 +1,20 @@
 <template>
   <nav>
-    <v-navigation-drawer app class="grey darken-4" width="300px">
+    <v-app-bar app color="transparent" collapse outlined>
+      <v-app-bar-nav-icon
+        large
+        @click="drawer = !drawer"
+        class="orange--text"
+      ></v-app-bar-nav-icon>
+
+      <v-toolbar-title></v-toolbar-title>
+    </v-app-bar>
+    <v-navigation-drawer
+      app
+      class="grey darken-4"
+      width="300px"
+      v-model="drawer"
+    >
       <v-layout column align-center>
         <v-flex class="mt-4">
           <p
@@ -18,12 +32,12 @@
       </v-layout>
       <v-list>
         <v-list-item-group class="my-5">
-          <v-list-item v-for="(item, i) in navItems" :key="i">
+          <v-list-item v-for="(item, i) in navItems" :key="i" :href="item.href">
             <v-list-item-content>
               <v-list-item-title
                 class="white--text text-center text-h6 font-weight-thin"
               >
-                {{ item }}
+                {{ item.title }}
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -42,14 +56,15 @@
 export default {
   data() {
     return {
+      drawer: true,
       navItems: [
-        "About Me",
-        "Services",
-        "Experience",
-        "Skills and Education",
-        "Portfolio",
-        "Clients",
-        "Contact"
+        { title: "About Me", href: "#about" },
+        { title: "Services", href: "#services" },
+        { title: "Experience", href: "#experience" },
+        { title: "Skills and Education", href: "#skills" },
+        { title: "Portfolio", href: "#portfolio" },
+        { title: "Clients", href: "#clients" },
+        { title: "Contact", href: "#contact" }
       ],
       icons: ["mdi-twitter", "mdi-linkedin", "mdi-github"]
     };

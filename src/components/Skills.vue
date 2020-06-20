@@ -55,7 +55,7 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="4">
+          <v-col cols="4" class="hidden-sm-and-down">
             <h3 class="text-h5 my-5 orange--text">My Education</h3>
             <v-row>
               <v-sheet color="transparent">
@@ -85,7 +85,7 @@
                 </v-row>
               </v-sheet>
             </v-row>
-            <v-row class="mt-5">
+            <v-row class="mt-5 hidden-sm-and-down">
               <v-col class="mt-5">
                 <h3 class="text-h5 orange--text font-weight-light">
                   Skills Detail

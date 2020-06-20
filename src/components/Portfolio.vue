@@ -87,7 +87,7 @@
                   </v-col>
                 </v-row>
               </v-col>
-              <v-col cols="6" class="pa-5">
+              <v-col cols="6" class="pa-5 hidden-sm-and-down">
                 <v-img
                   :src="project.project_image"
                   height="300"
