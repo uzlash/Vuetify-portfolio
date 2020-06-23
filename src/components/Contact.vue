@@ -18,7 +18,7 @@
         </v-col>
         <v-col class="col-md-2 hidden-sm-and-down" align="center">
           <v-avatar size="100">
-            <img src="https://i.imgur.com/58RzHdm.jpg" />
+            <img src="https://i.imgur.com/TZHARGD.jpg" />
           </v-avatar>
         </v-col>
       </v-row>
