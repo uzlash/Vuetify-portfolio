@@ -13,6 +13,7 @@
     "firebase": "^7.15.2",
     "roboto-fontface": "*",
     "vue": "^2.6.11",
+    "vue-parallaxy": "^1.1.1",
     "vuetify": "^2.2.11"
   },
   "devDependencies": {

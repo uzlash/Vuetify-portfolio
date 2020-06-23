@@ -16,9 +16,9 @@
       v-model="drawer"
     >
       <v-layout column align-center>
-        <v-flex class="mt-4">
+        <v-flex class="mt-3">
           <p
-            class="white--text mt-3 text-center text-h2 font-weight-bold orange--text"
+            class="white--text mt-2 text-center text-h2 font-weight-bold orange--text"
           >
             UM
           </p>
@@ -31,7 +31,7 @@
         </v-flex>
       </v-layout>
       <v-list>
-        <v-list-item-group class="my-5">
+        <v-list-item-group class="my-4">
           <v-list-item v-for="(item, i) in navItems" :key="i" :href="item.href">
             <v-list-item-content>
               <v-list-item-title
@@ -43,10 +43,14 @@
           </v-list-item>
         </v-list-item-group>
       </v-list>
-      <v-row wrap>
-        <v-col class="text-center" md4 v-for="(icon, i) in icons" :key="i">
-          <v-icon>{{ icon }}</v-icon>
-        </v-col>
+      <v-row wrap justify="center">
+        <!-- <v-col class="col-md-2" v-for="(el, i) in icons" :key="i"> -->
+        <v-list class="col-md-2" v-for="(el, i) in icons" :key="i">
+          <v-list-item :href="el.href">
+            <v-icon>{{ el.icon }}</v-icon>
+          </v-list-item>
+        </v-list>
+        <!-- </v-col> -->
       </v-row>
     </v-navigation-drawer>
   </nav>
@@ -66,10 +70,21 @@ export default {
         { title: "Clients", href: "#clients" },
         { title: "Contact", href: "#contact" }
       ],
-      icons: ["mdi-twitter", "mdi-linkedin", "mdi-github"]
+      icons: [
+        { icon: "mdi-twitter", href: "https://twitter.com/uzlash" },
+        {
+          icon: "mdi-linkedin",
+          href: "https://www.linkedin.com/in/usman-murtala-uzlash/"
+        },
+        { icon: "mdi-github", href: "https://github.com/uzlash" }
+      ]
     };
   }
 };
 </script>
 
-<style></style>
+<style>
+.el__href {
+  border-bottom: none !important;
+}
+</style>
