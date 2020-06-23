@@ -1,11 +1,11 @@
 <template>
   <section class="portfolio" id="portfolio">
     <v-container>
-      <h2 class="my-5 font-weight-light orange--text text-h3">
+      <h2 class="my-5 font-weight-light orange--text text-md-h3 text-sm-h4">
         WHAT I'VE DONE
       </h2>
 
-      <v-carousel height="650" hide-delimiter-background show-arrows-on-hover>
+      <v-carousel height="670" hide-delimiter-background show-arrows-on-hover>
         <v-carousel-item
           v-for="(project, index) in project_detail"
           :key="index"
@@ -18,7 +18,7 @@
               </div>
             </v-row>
             <v-row justify="center">
-              <v-col cols="6" class="pa-5">
+              <v-col class="pa-5 col-md-6 col-sm-12">
                 <v-row class="pa-5">
                   <h3 class="mb-2 text-h6 orange--text">Project Details</h3>
                   <p class="body-1 font-weight-light">
@@ -29,13 +29,15 @@
                   <v-col cols="12">
                     <h3 class="text-h6 orange--text">Project info</h3>
                   </v-col>
-                  <v-col cols="12">
+                  <v-col class="col-md-12">
                     <v-list color="transparent">
                       <v-list-item>
                         <v-list-item-icon>
-                          <v-icon color="orange" large>mdi-account</v-icon>
+                          <v-icon color="orange">mdi-account</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title class="body-1 font-weight-light">
+                        <v-list-item-title
+                          class="body-1 font-weight-light hidden-sm-and-down"
+                        >
                           Client Name:
                         </v-list-item-title>
                         <v-list-item-subtitle
@@ -52,7 +54,9 @@
                         <v-list-item-icon>
                           <v-icon color="orange" large>mdi-calendar</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title class="body-1 font-weight-light">
+                        <v-list-item-title
+                          class="body-1 font-weight-light hidden-sm-and-down"
+                        >
                           Project Date:
                         </v-list-item-title>
                         <v-list-item-subtitle
@@ -69,7 +73,9 @@
                         <v-list-item-icon>
                           <v-icon color="orange" large>mdi-link</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title class="body-1 font-weight-light">
+                        <v-list-item-title
+                          class="body-1 font-weight-light hidden-sm-and-down"
+                        >
                           Live Preview
                         </v-list-item-title>
                         <v-list-item-subtitle class="mr-5">

@@ -1,11 +1,13 @@
 <template>
   <section class="contact" id="contact">
     <v-container>
-      <h2 class="my-5 font-weight-light orange--text text-h3 text-center">
+      <h2
+        class="my-5 font-weight-light orange--text text-md-h3 text-sm-h4 text-center"
+      >
         LET'S TALK
       </h2>
       <v-row justify="center">
-        <v-col cols="4">
+        <v-col class="col-md-4 col-sm-12">
           <h3 class="font-weight-light orange--text text-h5 text-center">
             What can i do for you?
           </h3>
@@ -14,14 +16,14 @@
             and i will get back to you within 1-2 business days.
           </p>
         </v-col>
-        <v-col cols="2" align="center">
+        <v-col class="col-md-2 hidden-sm-and-down" align="center">
           <v-avatar size="100">
             <img src="https://i.imgur.com/58RzHdm.jpg" />
           </v-avatar>
         </v-col>
       </v-row>
       <v-row justify="center">
-        <v-col cols="6">
+        <v-col class="col-md-6 col-sm-12">
           <v-card>
             <v-card-text>
               <v-form class="px-3" ref="form">

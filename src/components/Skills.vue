@@ -4,7 +4,9 @@
       <v-col col-12>
         <v-row justify="space-between">
           <v-col cols="auto">
-            <h2 class="my-5 font-weight-light orange--text text-h3">
+            <h2
+              class="my-5 font-weight-light orange--text text-md-h3 text-sm-h4"
+            >
               WHAT I KNOW?
             </h2>
           </v-col>
@@ -13,7 +15,7 @@
       </v-col>
       <v-col col-12>
         <v-row justify="space-around">
-          <v-col cols="6">
+          <v-col class="col-md-6 col-sm-12">
             <h3 class="text-h5 my-5 orange--text">My Skills</h3>
             <h4 class="text-h6 orange--text font-weight-light">
               Technical Skills
@@ -39,7 +41,7 @@
             <h4 class="text-h6 orange--text font-weight-light">Soft Skills</h4>
             <v-row v-for="(skill, index) in skillSoft" :key="index">
               <v-col cols="4" align-self="center"
-                ><span class="body-1 font-weight-light ml-4">{{
+                ><span class="body-1 font-weight-light ">{{
                   skill.title
                 }}</span></v-col
               >

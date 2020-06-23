@@ -2,7 +2,7 @@
   <section class="services" id="services">
     <v-container>
       <v-row>
-        <v-col cols="8">
+        <v-col class="col-md-8 col-sm-12">
           <v-expansion-panels popout v-model="panel" multiple>
             <v-expansion-panel
               v-for="(ability, i) in abilities"

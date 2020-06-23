@@ -12,7 +12,7 @@
     <v-navigation-drawer
       app
       class="grey darken-4"
-      width="300px"
+      width="280px"
       v-model="drawer"
     >
       <v-layout column align-center>
@@ -23,10 +23,10 @@
             UM
           </p>
         </v-flex>
-        <v-flex class="my-2 text-h4 font-weight-thin">
+        <v-flex class="my-2 text-md-h4 text-sm-h5 font-weight-thin">
           Usman Murtala
         </v-flex>
-        <v-flex class="my-2 text-h5 font-weight-thin">
+        <v-flex class="my-2 text-md-h5 text-sm-h6 font-weight-thin">
           Front End Developer
         </v-flex>
       </v-layout>
@@ -35,7 +35,7 @@
           <v-list-item v-for="(item, i) in navItems" :key="i" :href="item.href">
             <v-list-item-content>
               <v-list-item-title
-                class="white--text text-center text-h6 font-weight-thin"
+                class="white--text text-center text-md-h6 text-sm-body-1 font-weight-thin"
               >
                 {{ item.title }}
               </v-list-item-title>

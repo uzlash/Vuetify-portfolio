@@ -1,11 +1,15 @@
 <template>
   <section class="clients" id="clients">
     <v-container>
-      <h2 class="my-5 font-weight-light orange--text text-h3">
+      <h2 class="my-5 font-weight-light orange--text text-md-h3 text-sm-h4">
         WHAT MY CLIENTS SAY
       </h2>
       <v-row>
-        <v-col cols="4" v-for="comment in comments" :key="comment.client">
+        <v-col
+          class="col-md-4 col-sm-12"
+          v-for="comment in comments"
+          :key="comment.client"
+        >
           <v-row>
             <v-icon large class="orange--text">mdi-format-quote-open</v-icon>
           </v-row>

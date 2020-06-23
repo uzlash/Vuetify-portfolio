@@ -1,16 +1,15 @@
 <template>
   <section class="experience" id="experience">
     <v-container>
-      <h2 class="my-5 font-weight-light orange--text text-h3">
+      <h2 class="my-5 font-weight-light orange--text text-md-h3 text-sm-h4">
         WHERE I'VE BEEN
       </h2>
       <v-row>
-        <v-timeline>
+        <v-timeline :dense="$vuetify.breakpoint.smAndDown">
           <v-timeline-item
             v-for="(exp, index) in experience"
             :key="index"
             color="orange"
-            large
           >
             <template v-slot:opposite>
               <span> {{ exp.year }} </span>

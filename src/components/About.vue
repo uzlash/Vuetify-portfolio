@@ -1,9 +1,11 @@
 <template>
   <section class="about" id="about">
     <v-container>
-      <h2 class="my-5 font-weight-light orange--text text-h3">WHO AM I?</h2>
+      <h2 class="my-5 font-weight-light orange--text text-md-h3 text-sm-">
+        WHO AM I?
+      </h2>
       <v-row wrap class="text-h6 font-weight-thin">
-        <v-col md4>
+        <v-col class="col-md-4 col-sm-12">
           <p class="font-weight-light">
             I am a front end developer with 2 years of experience who is adept
             at creating client side apps that are accessible, performant,
@@ -13,7 +15,7 @@
             superb UX (User Experience).
           </p>
         </v-col>
-        <v-col md4 class="py-auto">
+        <v-col class="py-auto col-md-4 col-sm-12 hidden-sm-and-down">
           <v-row>
             <h4 class="mx-4">Location:</h4>
             <span>Kaduna, Nigeria</span>
@@ -27,7 +29,9 @@
             <span>+2348069558390</span>
           </v-row>
         </v-col>
-        <v-col md4 class="text-right text-uppercase text-no-wrap">
+        <v-col
+          class="text-right text-uppercase text-no-wrap hidden-sm-and-down col-md-4"
+        >
           <h2 class="font-weight-light">Front End Developer</h2>
           <span class="orange--text font-weight-light">Usman Murtala</span>
         </v-col>
@@ -35,7 +39,7 @@
       <v-row>
         <v-col md8>
           <h2
-            class="my-5 font-weight-light orange--text text-h3 text-uppercase"
+            class="my-5 font-weight-light orange--text text-md-h3 text-sm-h4 text-uppercase"
           >
             What i can create for you is a site that is:
           </h2>
